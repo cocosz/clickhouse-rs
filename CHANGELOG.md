@@ -12,7 +12,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 * A value that ends like an old-format exception (`Code: … DB::Exception: …))\n`) no longer fails the query on
   servers that send an exception tag (25.11+). ([#503])
+* Stopped enabling the default features of `twox-hash`, which pulled a second major version of `rand` into builds
+  with the `lz4` feature. ([#491])
 
+[#491]: https://github.com/ClickHouse/clickhouse-rs/issues/491
 [#503]: https://github.com/ClickHouse/clickhouse-rs/pull/503
 
 ## [0.15.3] - 2026-10-07
